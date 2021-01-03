@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name OpenRetroPad)(type Legacy)(uri ${KIPRJMOD}/OpenRetroPad.lib)(options "")(descr ""))
+)

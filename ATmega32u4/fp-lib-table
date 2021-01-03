@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name OpenRetroPad)(type KiCad)(uri ${KIPRJMOD}/OpenRetroPad.pretty)(options "")(descr ""))
+)

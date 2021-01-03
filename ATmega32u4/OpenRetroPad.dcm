@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ATmega32U4
+F https://www.microchip.com/wwwproducts/en/ATmega32U4
+$ENDCMP
+#
+#End Doc Library
