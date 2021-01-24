@@ -1,34 +1,25 @@
 OpenRetroPad Hardware
 =====================
 
-TODO: Populate this readme
+This repository holds some hardware designs to support [OpenRetroPad](https://github.com/OpenRetroPad/OpenRetroPad) software development.
 
-# Pinout
+# ATmega32u4
 
-| DB25 | ATmega32u4 | Arduino |
-|------|------------|---------|
-| 1    | GND        | -       |
-| 14   | 5V         | -       |
-| 2    | 3V3        | -       |
-| 15   | PB3        | 14      |
-| 3    | PB2        | 16      |
-| 16   | PB1        | 15      |
-| 4    | PE6        | 7       |
-| 17   | PF4        | 21      |
-| 5    | PF5        | 20      |
-| 18   | PF5        | 19      |
-| 6    | PF7        | 18      |
-| 19   | PC6        | 5       |
-| 7    | -          | -       |
-| 20   | PB6        | 10      |
-| 8    | PB5        | 9       |
-| 21   | PB4        | 8       |
-| 9    | PD7        | 6       |
-| 22   | PD4        | 4       |
-| 10   | PD3        | 1       |
-| 23   | PD2        | 0       |
-| 11   | PD1        | 2       |
-| 24   | PD0        | 3       |
-| 12   | 3V3        | -       |
-| 25   | 5V         | -       |
-| 13   | GND        | -       |
+![PCB Top](ATmega32u4/outputs/v1/pcb-top.png)
+![PCB Bottom](ATmega32u4/outputs/v1/pcb-bottom.png)
+
+## Hardware Info
+
+Bootloader uses [PC7](https://github.com/arduino/ArduinoCore-avr/blob/master/bootloaders/caterina/Caterina.h#L69) as output for led pulsing in hardware bootloader mode ( https://github.com/arduino/ArduinoCore-avr/blob/master/bootloaders/caterina/Caterina.c#L151 and https://github.com/arduino/ArduinoCore-avr/blob/master/bootloaders/caterina/Caterina.c#L95 ). This LED can otherwise be used in user code for status indication.
+
+Switch 1 (labelled 'HWB') enters hardware bootloader mode. Switch 2 (labelled 'Reset') resets the microcontroller.
+
+DB25 <-> ATmega32u4 pinout is labelled on the back of the PCB. The NRF24 pins are also labelled.
+
+USB DFU mode as per http://ww1.microchip.com/downloads/en/DeviceDoc/doc7618.pdf
+
+DFU drivers can be found in [FLIP](https://www.microchip.com/developmenttools/ProductDetails/flip)
+Flip is not required to be installed unless uploading a .hex file manually
+
+Flags to avrdude to upload: -c flip1 -p m32u4 -P usb
+Flip is not required to be installed for avrdude to use the protocol.
