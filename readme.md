@@ -8,7 +8,7 @@ This repository holds some hardware designs to support [OpenRetroPad](https://gi
 * [PCB Top](ATmega32u4/pics/OpenRetroPad-top-1.png)
 * [PCB Bottom](ATmega32u4/pics/OpenRetroPad-bottom.png)
 * [Schematic](ATmega32u4/OpenRetroPad.pdf)
-* [Schematic](ATmega32u4/Layout.pdf)
+* [Layout/Assembly](ATmega32u4/OpenRetroPad-Assembly.pdf)
 
 ## Hardware Info
 
