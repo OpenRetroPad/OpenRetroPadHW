@@ -1,10 +1,10 @@
 Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
 C1,10u,C_0805_2012Metric,4.9,-21.3,0.0,top
-C2,10u,C_0805_2012Metric,8.3,-19.3,0.0,top
+C2,1u,C_0603_1608Metric,5.05,-19.5,0.0,top
 C3,10u,C_0805_2012Metric,0.1,-6.0,-90.0,top
 C4,1u,C_0603_1608Metric,2.7,-5.95,-90.0,top
 C5,100n,C_0603_1608Metric,5.3,-5.95,-90.0,top
-C6,10u,C_0805_2012Metric,3.0,-46.9,0.0,top
+C6,10u,C_0805_2012Metric,4.8,-48.75,0.0,top
 C7,1u,C_0603_1608Metric,8.0,-35.3,0.0,top
 C8,100n,C_0603_1608Metric,8.0,-36.8,0.0,top
 C9,100n,C_0603_1608Metric,14.66066,-26.43934,-45.0,top
@@ -19,7 +19,7 @@ C17,100n,C_0603_1608Metric,15.2,-54.4,90.0,top
 C18,100n,C_0603_1608Metric,22.751992,-27.548008,-135.0,top
 C19,100n,C_0603_1608Metric,5.6,-38.3,180.0,top
 C20,100n,C_0603_1608Metric,26.3,-32.3,-45.0,top
-D1,1N5817,D_SOD-323,8.3,-21.3,180.0,top
+D1,D_Schottky,D_SOD-323,4.8,-23.25,180.0,top
 D2,TX,LED_0603_1608Metric,16.7,-54.4,-90.0,top
 D3,RX,LED_0603_1608Metric,18.3,-54.4,-90.0,top
 D4,User,LED_0603_1608Metric,26.7,-40.65,135.0,top
@@ -27,10 +27,9 @@ D5,1N5817,D_SOD-323,5.5,-41.5,0.0,top
 D6,Power,LED_0603_1608Metric,-1.778,-38.676,180.0,top
 D7,RX,LED_0603_1608Metric,21.9,-54.4,90.0,top
 D8,TX,LED_0603_1608Metric,23.5,-54.4,90.0,top
+D9,D_Schottky,D_SOD-323,4.75,-50.7,180.0,top
 F1,500mA,Fuse_0805_2012Metric,21.6,-9.25,180.0,top
 F2,500mA,Fuse_0805_2012Metric,21.6,-13.45,180.0,top
-FB1,500mA,L_0805_2012Metric,4.9,-23.2,0.0,top
-FB2,500mA,L_0805_2012Metric,4.0,-49.7,90.0,top
 FB3,500mA,L_0603_1608Metric,23.5,-43.85,-45.0,top
 FB4,500mA,L_0603_1608Metric,21.7,-26.5,45.0,top
 J1,USB_C_Receptacle_USB2.0,USB_C_Receptacle_HRO_TYPE-C-31-M-12,-2.2,-25.68,90.0,top

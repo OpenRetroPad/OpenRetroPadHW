@@ -5,7 +5,7 @@ This repository holds some hardware designs to support [OpenRetroPad](https://gi
 
 # ATmega32u4
 
-* [PCB Top](ATmega32u4/pics/OpenRetroPad-top-1.png)
+* [PCB Top](ATmega32u4/pics/OpenRetroPad-top.png)
 * [PCB Bottom](ATmega32u4/pics/OpenRetroPad-bottom.png)
 * [Schematic](ATmega32u4/OpenRetroPad.pdf)
 * [Layout/Assembly](ATmega32u4/OpenRetroPad-Assembly.pdf)
@@ -13,6 +13,8 @@ This repository holds some hardware designs to support [OpenRetroPad](https://gi
 ## Hardware Info
 
 The board includes two USB-C plugs of which both can be used for programming, J2 over a CH340N USB-UART serial connection or J1 over USB DFU.
+
+### Programming via USB
 
 Bootloader uses [PC7](https://github.com/arduino/ArduinoCore-avr/blob/master/bootloaders/caterina/Caterina.h#L69) as output for led pulsing in hardware bootloader mode ( https://github.com/arduino/ArduinoCore-avr/blob/master/bootloaders/caterina/Caterina.c#L151 and https://github.com/arduino/ArduinoCore-avr/blob/master/bootloaders/caterina/Caterina.c#L95 ). This LED can otherwise be used in user code for status indication. TX (D5) and RX (B0) are also broken out for LED activity.
 

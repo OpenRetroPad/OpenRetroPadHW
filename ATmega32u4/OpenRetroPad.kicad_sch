@@ -662,8 +662,8 @@
 
   (bus_alias "SPI" (members "CE" "SCK" "MOSI" "MISO" "IRQ" "CSN"))
   (bus_alias "UART" (members "TX" "RX" "RST"))
-  (bus_alias "USB" (members "DP" "DM"))
   (bus_alias "DB25" (members "PB6" "PB5" "PF4" "PB4" "PF5" "PF6" "PD7" "PF7" "PC6" "PD4" "PD0" "PD1"))
+  (bus_alias "USB" (members "DP" "DM"))
   (junction (at 127 111.76) (diameter 0) (color 0 0 0 0)
     (uuid 156412af-d477-4495-b8dc-aece03a08260)
   )
@@ -1063,13 +1063,13 @@
   )
 
   (symbol_instances
-    (path "/5c67de70-9944-4ec4-9a0d-583067d651b3/3ea46140-e076-4348-9e63-2a0c92b80df3"
+    (path "/3caf2f94-72cd-40de-b147-2caf4b503012/32d12425-6fff-4c65-9db8-c28ec14fba9f"
       (reference "#FLG01") (unit 1) (value "PWR_FLAG") (footprint "")
     )
-    (path "/5c67de70-9944-4ec4-9a0d-583067d651b3/fbaa43bf-08e7-4d14-9176-423cb167b008"
+    (path "/07c53d41-0550-42ad-9257-e12fceb2bfe2/32d12425-6fff-4c65-9db8-c28ec14fba9f"
       (reference "#FLG02") (unit 1) (value "PWR_FLAG") (footprint "")
     )
-    (path "/5c67de70-9944-4ec4-9a0d-583067d651b3/89f662d5-7faa-45c1-a89d-d989bbe4f002"
+    (path "/3caf2f94-72cd-40de-b147-2caf4b503012/c760372f-1dec-4c89-959b-7cc62ddc5ee9"
       (reference "#FLG03") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/f64de35f-a3eb-4b10-b231-57a17c87d399/4e6b90bb-e654-425f-bab7-2ffcc4803bf9"
@@ -1077,6 +1077,9 @@
     )
     (path "/f64de35f-a3eb-4b10-b231-57a17c87d399/c7034911-cf14-4f28-b954-5de66734e321"
       (reference "#FLG05") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
+    (path "/07c53d41-0550-42ad-9257-e12fceb2bfe2/c760372f-1dec-4c89-959b-7cc62ddc5ee9"
+      (reference "#FLG06") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/3caf2f94-72cd-40de-b147-2caf4b503012/f97d72cc-95a1-42aa-83b3-3c69c70c29d1"
       (reference "#PWR01") (unit 1) (value "+5V") (footprint "")
@@ -1195,8 +1198,8 @@
     (path "/3caf2f94-72cd-40de-b147-2caf4b503012/e347a6f3-1fbe-4eff-8dbf-d229c8539dd1"
       (reference "C1") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
-    (path "/5c67de70-9944-4ec4-9a0d-583067d651b3/45e18f07-1ac2-4cea-9814-60684fd8f1ae"
-      (reference "C2") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    (path "/5c67de70-9944-4ec4-9a0d-583067d651b3/e70beb97-7e68-4960-a1d3-2cff23da04d7"
+      (reference "C2") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/5c67de70-9944-4ec4-9a0d-583067d651b3/2711a269-64a9-4425-aae0-4fac575efb4d"
       (reference "C3") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -1252,8 +1255,8 @@
     (path "/f64de35f-a3eb-4b10-b231-57a17c87d399/c968e5e0-091e-42ef-8ee6-68593816b938"
       (reference "C20") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
-    (path "/5c67de70-9944-4ec4-9a0d-583067d651b3/c0aa1c7e-f210-43ec-a586-3526e9b8f932"
-      (reference "D1") (unit 1) (value "1N5817") (footprint "Diode_SMD:D_SOD-323")
+    (path "/3caf2f94-72cd-40de-b147-2caf4b503012/c1596543-413e-4549-acef-39889357888a"
+      (reference "D1") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SOD-323")
     )
     (path "/e695768a-80bc-42ff-a606-2692dea2ae42/e5614590-dd32-4e88-b5f7-9de1437a7737"
       (reference "D2") (unit 1) (value "TX") (footprint "LED_SMD:LED_0603_1608Metric")
@@ -1276,17 +1279,14 @@
     (path "/714b6847-bef8-436a-9809-c134f98f39b4/68094c3a-dcf7-4d16-a7c8-be663a6f58ec"
       (reference "D8") (unit 1) (value "TX") (footprint "LED_SMD:LED_0603_1608Metric")
     )
+    (path "/07c53d41-0550-42ad-9257-e12fceb2bfe2/c1596543-413e-4549-acef-39889357888a"
+      (reference "D9") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SOD-323")
+    )
     (path "/7d3c4de9-4e90-4d7f-853d-a8c8df3c51ed/bdae93ad-22ca-4d8f-8fd3-8736f2da58d5"
       (reference "F1") (unit 1) (value "500mA") (footprint "Fuse:Fuse_0805_2012Metric")
     )
     (path "/7d3c4de9-4e90-4d7f-853d-a8c8df3c51ed/2ffa70da-e5a4-487e-9934-4febc5f3e335"
       (reference "F2") (unit 1) (value "500mA") (footprint "Fuse:Fuse_0805_2012Metric")
-    )
-    (path "/3caf2f94-72cd-40de-b147-2caf4b503012/662c105b-bfc3-4345-a030-21ea68472525"
-      (reference "FB1") (unit 1) (value "500mA") (footprint "Inductor_SMD:L_0805_2012Metric")
-    )
-    (path "/07c53d41-0550-42ad-9257-e12fceb2bfe2/662c105b-bfc3-4345-a030-21ea68472525"
-      (reference "FB2") (unit 1) (value "500mA") (footprint "Inductor_SMD:L_0805_2012Metric")
     )
     (path "/f64de35f-a3eb-4b10-b231-57a17c87d399/b61634ea-2dd7-4b09-af68-71072ac0c4e3"
       (reference "FB3") (unit 1) (value "500mA") (footprint "Inductor_SMD:L_0603_1608Metric")
