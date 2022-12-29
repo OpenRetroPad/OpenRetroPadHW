@@ -975,6 +975,12 @@
     (uuid f2ef56b0-70a3-48e9-8f00-44ef8db972e4)
   )
 
+  (text "Notes:\n\nSchottky diode on each usb VBUS in attempt to be able to use both USB connections simultaneously.\nTODO: Update this text when assembled with working status.\n\nTODO: Fuses on inputs? 5v and 3v3 output to DB25 are fused\n\nTODO: Consider filter on USB shield, potentially small cap large resistor, or even ferrite bead"
+    (at 13.97 195.58 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 43719683-00d7-4f10-b920-a8534ceaf25c)
+  )
+
   (label "D+" (at 133.35 86.36 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0321de21-4f2e-4235-be10-e2d9ff9436ce)
