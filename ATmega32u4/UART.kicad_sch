@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "OpenRetroPad")
+    (date "2022-12-29")
+    (rev "2")
+    (comment 3 "github.com/OpenRetroPad")
+    (comment 4 "ATmega32u4")
+  )
+
   (lib_symbols
     (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "C" (id 0) (at 0.254 1.778 0)
@@ -520,11 +528,6 @@
   (text "RX/TX swapover here" (at 204.47 96.52 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 1ad057be-7e71-4341-b220-5f4ad3e6b6f4)
-  )
-  (text "Notes:\n\nCH330N/CH340N interchangeable parts\n\nDatasheet recommends not powering CH340 and MCU separately. Could cause issues when using TX/RX port for controllers.\nTODO: Investigate powering separately, adding diode instead of resistors to RXD/TXD"
-    (at 12.7 196.85 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 6d0978ae-12b6-4241-a52d-aa9a3591a223)
   )
 
   (label "TXD" (at 153.67 95.25 0)

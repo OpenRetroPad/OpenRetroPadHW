@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "OpenRetroPad")
+    (date "2022-12-29")
+    (rev "2")
+    (comment 3 "github.com/OpenRetroPad")
+    (comment 4 "ATmega32u4")
+  )
+
   (lib_symbols
     (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "C" (id 0) (at 0.254 1.778 0)
@@ -745,8 +753,6 @@
     (uuid ff6397ee-9791-46f4-92c5-86406897a76c)
   )
 
-  (no_connect (at 107.95 95.25) (uuid 16f3092d-01d6-4ead-bb23-4cea1fd2f832))
-  (no_connect (at 107.95 123.19) (uuid 457ab346-6b3e-4478-a456-e5ffee03dc51))
   (no_connect (at 107.95 138.43) (uuid d374db0b-5592-43af-947e-9d7ee6151f0b))
 
   (bus_entry (at 187.96 80.01) (size 2.54 -2.54)
@@ -933,6 +939,10 @@
   (wire (pts (xy 96.52 60.96) (xy 96.52 69.85))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 36945bcd-282d-4e07-acf3-74ebff8c5399)
+  )
+  (wire (pts (xy 107.95 95.25) (xy 114.3 95.25))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 37d96ead-e8e1-46a6-a51f-644b73124a51)
   )
   (wire (pts (xy 100.33 46.99) (xy 100.33 60.96))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -1123,6 +1133,10 @@
     (uuid a430ac7e-7775-4392-a901-c003f075ecfe)
   )
 
+  (wire (pts (xy 107.95 123.19) (xy 114.3 123.19))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid a4733bef-bea0-4b81-94f5-4eaa08ddf276)
+  )
   (wire (pts (xy 60.96 120.65) (xy 60.96 118.11))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid a51912b2-90f5-4328-a834-cc7a920b4a72)
@@ -1335,11 +1349,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c3750747-5d78-4235-b50d-483e8cb00621)
   )
-  (text "Notes:\n\nInitial design based on \"AN2519 - AVR Microcontroller Hardware Design Considerations\" DS00002519 "
-    (at 12.7 196.85 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid ca8b43fa-60d1-4fdf-a838-5d4515ad4f7d)
-  )
   (text "PF6 (D19/A1)" (at 115.57 148.59 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid cdf02b18-0e39-4e74-bfa0-50487e6fe4ab)
@@ -1501,6 +1510,14 @@
   (hierarchical_label "USB_DATA{USB}" (shape bidirectional) (at 33.02 88.9 180)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 2bffc15a-7243-4ef2-a135-072069d37920)
+  )
+  (hierarchical_label "PB7" (shape bidirectional) (at 114.3 95.25 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 354db476-ad93-4b7f-8e9c-708344095724)
+  )
+  (hierarchical_label "PD6" (shape bidirectional) (at 114.3 123.19 0)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 377aae16-87de-43bf-9bec-2f6550563342)
   )
   (hierarchical_label "{UART}" (shape bidirectional) (at 165.1 38.1 0)
     (effects (font (size 1.27 1.27)) (justify left))

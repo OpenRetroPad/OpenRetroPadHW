@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "OpenRetroPad")
+    (date "2022-12-29")
+    (rev "2")
+    (comment 3 "github.com/OpenRetroPad")
+    (comment 4 "ATmega32u4")
+  )
+
   (lib_symbols
     (symbol "Connector_Generic:Conn_02x04_Odd_Even" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 1.27 5.08 0)
@@ -301,12 +309,6 @@
   (wire (pts (xy 132.08 62.23) (xy 156.21 62.23))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid e5dd2505-46cd-4741-9eec-69bac93d1f07)
-  )
-
-  (text "Notes:\n\nEssentially just an SPI bus to 2.54mm headers"
-    (at 12.7 196.85 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 5df7b55c-137a-43eb-a7f2-fa1d77a6e76a)
   )
 
   (label "PF1-IRQ" (at 132.08 85.09 0)

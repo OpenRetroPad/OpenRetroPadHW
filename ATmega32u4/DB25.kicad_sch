@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "OpenRetroPad")
+    (date "2022-12-29")
+    (rev "2")
+    (comment 3 "github.com/OpenRetroPad")
+    (comment 4 "ATmega32u4")
+  )
+
   (lib_symbols
     (symbol "Connector:DB25_Male_MountingHoles" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 36.83 0)
@@ -988,11 +996,6 @@
     (uuid f9780431-a578-490a-8e84-52e805f48b49)
   )
 
-  (text "Notes:\n\nUses KiCad vector buses, to view click Tools -> Bus Annotations\n\nTODO: Confirm current draw for controllers and update fuses as appropriate"
-    (at 12.7 196.85 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 01bdc5ec-1348-4608-ac03-7e1d8065ae1e)
-  )
   (text "PD2 (D0/RX)" (at 88.9 74.93 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 04b090f0-b145-49f8-a564-696cee7a3e8d)

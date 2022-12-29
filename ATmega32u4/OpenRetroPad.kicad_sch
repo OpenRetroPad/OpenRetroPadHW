@@ -6,8 +6,8 @@
 
   (title_block
     (title "OpenRetroPad")
-    (date "JAN-21")
-    (rev "1")
+    (date "2022-12-29")
+    (rev "2")
     (comment 3 "github.com/OpenRetroPad")
     (comment 4 "ATmega32u4")
   )
@@ -661,9 +661,9 @@
   )
 
   (bus_alias "SPI" (members "PE6-CE" "PB1-SCK" "PB2-MOSI" "PB3-MISO" "PF1-IRQ" "PB4-CSN"))
+  (bus_alias "DB25" (members "PB6" "PB5" "PF4" "PF5" "PF6" "PD7" "PF7" "PC6" "PD4" "PD0" "PD1"))
   (bus_alias "UART" (members "PD3-TX" "PD2-RX" "RST"))
   (bus_alias "USB" (members "DP" "DM"))
-  (bus_alias "DB25" (members "PB6" "PB5" "PF4" "PF5" "PF6" "PD7" "PF7" "PC6" "PD4" "PD0" "PD1"))
   (junction (at 127 111.76) (diameter 0) (color 0 0 0 0)
     (uuid 156412af-d477-4495-b8dc-aece03a08260)
   )
@@ -672,7 +672,9 @@
   )
 
   (no_connect (at 274.32 60.96) (uuid 2a247c22-a6a0-46ee-b514-db286d4e8628))
+  (no_connect (at 190.5 106.68) (uuid 44036afc-cc78-4690-82bd-6f9faebf8081))
   (no_connect (at 274.32 66.04) (uuid 55dc94ff-5865-4acb-a9a6-41d4fafe49b1))
+  (no_connect (at 190.5 109.22) (uuid a70671e4-831e-4cde-8647-4a853dcabf32))
   (no_connect (at 274.32 71.12) (uuid aa8675c9-950c-49ec-b590-db030678f50a))
   (no_connect (at 274.32 55.88) (uuid f6e03485-379a-4c86-98d1-33e865f54b10))
 
@@ -711,6 +713,11 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 3c26b69f-3f62-4b27-a2c1-403a67c2ed05)
   )
+
+  (wire (pts (xy 50.8 44.45) (xy 63.5 44.45))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 443af2ee-402e-480a-a487-24f8b53e5049)
+  )
   (bus (pts (xy 139.7 40.64) (xy 127 40.64))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 44e5dc30-fc3f-4869-b065-588125c8af07)
@@ -736,6 +743,10 @@
   (wire (pts (xy 101.6 158.75) (xy 139.7 158.75))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 6daf5c55-4833-4780-a50d-cde3d323b035)
+  )
+  (wire (pts (xy 50.8 41.91) (xy 63.5 41.91))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 6fb75005-cf84-424c-b0df-cec90d59a28e)
   )
   (bus (pts (xy 121.92 35.56) (xy 139.7 35.56))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -775,11 +786,6 @@
     (uuid ffb31e7b-1334-4f44-a73f-c18934603424)
   )
 
-  (text "Notes:\n\nMounting holes are isolated, not grounded" (at 12.7 196.85 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid a1b3ca54-ce10-411b-8a47-149f15873614)
-  )
-
   (label "PB0-RX_LED" (at 111.76 156.21 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 408a9ead-9df7-4514-b0aa-06fecb30e8d0)
@@ -787,6 +793,10 @@
   (label "PC7-LED_USER" (at 111.76 151.13 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 7634fc79-9dd0-40d5-aca1-b5910db2502c)
+  )
+  (label "PB7-CC1" (at 52.07 41.91 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 77ab738f-e148-4af9-b73d-cb8a03dc695c)
   )
   (label "PB5" (at 119.38 38.1 270)
     (effects (font (size 1.27 1.27)) (justify right bottom))
@@ -803,6 +813,10 @@
   (label "RST" (at 121.92 114.3 270)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid b305652f-7741-467a-91a2-473694b5ec61)
+  )
+  (label "PD6-CC2" (at 52.07 44.45 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid eb1d6532-8be8-411a-a638-4d80859faac9)
   )
 
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 271.78 66.04 90) (unit 1)
@@ -901,6 +915,14 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 11a056eb-8b42-4bcd-992a-7fb78a079df1)
     )
+    (pin "CC2" output (at 190.5 109.22 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 3da524eb-173b-4ab5-bdb1-154081b3a4f7)
+    )
+    (pin "CC1" output (at 190.5 106.68 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 7aa19432-e85a-4a04-8040-24655efc4da7)
+    )
   )
 
   (sheet (at 25.4 25.4) (size 25.4 25.4) (fields_autoplaced)
@@ -916,6 +938,14 @@
     (pin "{USB}" bidirectional (at 50.8 38.1 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid a81536b0-5f24-456f-af87-1cc2d37227e4)
+    )
+    (pin "CC2" output (at 50.8 44.45 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 3448e6cb-6a16-4c59-b379-b664ac80f707)
+    )
+    (pin "CC1" output (at 50.8 41.91 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid d458c022-6236-4dd5-b171-e0833c4c5bb4)
     )
   )
 
@@ -1069,6 +1099,14 @@
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid d4f91c45-ddf2-492d-b1e4-a6bc855b37ee)
     )
+    (pin "PB7" bidirectional (at 63.5 41.91 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 7507aa19-beed-4f44-9d71-07ec628848ff)
+    )
+    (pin "PD6" bidirectional (at 63.5 44.45 180)
+      (effects (font (size 1.27 1.27)) (justify left))
+      (uuid 09f1931f-28ad-4cb9-af16-1d5854050d69)
+    )
   )
 
   (sheet_instances
@@ -1090,23 +1128,20 @@
     (path "/07c53d41-0550-42ad-9257-e12fceb2bfe2/32d12425-6fff-4c65-9db8-c28ec14fba9f"
       (reference "#FLG02") (unit 1) (value "PWR_FLAG") (footprint "")
     )
-    (path "/3caf2f94-72cd-40de-b147-2caf4b503012/c760372f-1dec-4c89-959b-7cc62ddc5ee9"
-      (reference "#FLG03") (unit 1) (value "PWR_FLAG") (footprint "")
-    )
     (path "/f64de35f-a3eb-4b10-b231-57a17c87d399/4e6b90bb-e654-425f-bab7-2ffcc4803bf9"
       (reference "#FLG04") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/f64de35f-a3eb-4b10-b231-57a17c87d399/c7034911-cf14-4f28-b954-5de66734e321"
       (reference "#FLG05") (unit 1) (value "PWR_FLAG") (footprint "")
     )
-    (path "/07c53d41-0550-42ad-9257-e12fceb2bfe2/c760372f-1dec-4c89-959b-7cc62ddc5ee9"
-      (reference "#FLG06") (unit 1) (value "PWR_FLAG") (footprint "")
+    (path "/3caf2f94-72cd-40de-b147-2caf4b503012/abbef7c2-e504-4247-b690-6a5e6faee837"
+      (reference "#FLG0101") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
+    (path "/07c53d41-0550-42ad-9257-e12fceb2bfe2/abbef7c2-e504-4247-b690-6a5e6faee837"
+      (reference "#FLG0102") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/3caf2f94-72cd-40de-b147-2caf4b503012/f97d72cc-95a1-42aa-83b3-3c69c70c29d1"
       (reference "#PWR01") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/3caf2f94-72cd-40de-b147-2caf4b503012/41a4a14a-04d5-4b05-acf9-8fac5d2c26f0"
-      (reference "#PWR02") (unit 1) (value "GND") (footprint "")
     )
     (path "/5c67de70-9944-4ec4-9a0d-583067d651b3/2c3fb1bd-1393-438d-a263-7d5d5f273166"
       (reference "#PWR03") (unit 1) (value "+5V") (footprint "")
@@ -1119,9 +1154,6 @@
     )
     (path "/07c53d41-0550-42ad-9257-e12fceb2bfe2/f97d72cc-95a1-42aa-83b3-3c69c70c29d1"
       (reference "#PWR06") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/07c53d41-0550-42ad-9257-e12fceb2bfe2/41a4a14a-04d5-4b05-acf9-8fac5d2c26f0"
-      (reference "#PWR07") (unit 1) (value "GND") (footprint "")
     )
     (path "/f64de35f-a3eb-4b10-b231-57a17c87d399/618bbad2-ccb5-4f99-9c84-f5310e68b759"
       (reference "#PWR08") (unit 1) (value "+5V") (footprint "")
@@ -1192,12 +1224,6 @@
     (path "/714b6847-bef8-436a-9809-c134f98f39b4/120f03d4-5345-4afd-b98c-5a79fff1c8fb"
       (reference "#PWR033") (unit 1) (value "GND") (footprint "")
     )
-    (path "/3caf2f94-72cd-40de-b147-2caf4b503012/1028d9d4-8403-4788-97bc-81798d261ded"
-      (reference "#PWR034") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/07c53d41-0550-42ad-9257-e12fceb2bfe2/1028d9d4-8403-4788-97bc-81798d261ded"
-      (reference "#PWR035") (unit 1) (value "GND") (footprint "")
-    )
     (path "/f64de35f-a3eb-4b10-b231-57a17c87d399/e7c005cc-8b0b-44d8-ae98-bf26182c4ef4"
       (reference "#PWR036") (unit 1) (value "+5V") (footprint "")
     )
@@ -1218,6 +1244,12 @@
     )
     (path "/5c67de70-9944-4ec4-9a0d-583067d651b3/5775720c-0647-4905-a8b3-baebb2862c35"
       (reference "#PWR0104") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/3caf2f94-72cd-40de-b147-2caf4b503012/1f6d1434-b97b-4809-83c6-b283eaf2dcc4"
+      (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/07c53d41-0550-42ad-9257-e12fceb2bfe2/1f6d1434-b97b-4809-83c6-b283eaf2dcc4"
+      (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
     )
     (path "/3caf2f94-72cd-40de-b147-2caf4b503012/e347a6f3-1fbe-4eff-8dbf-d229c8539dd1"
       (reference "C1") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0805_2012Metric")

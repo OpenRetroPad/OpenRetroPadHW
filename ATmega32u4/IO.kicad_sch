@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "OpenRetroPad")
+    (date "2022-12-29")
+    (rev "2")
+    (comment 3 "github.com/OpenRetroPad")
+    (comment 4 "ATmega32u4")
+  )
+
   (lib_symbols
     (symbol "Device:LED_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (id 0) (at -1.27 3.175 0)
@@ -367,11 +375,6 @@
   (text "Controller Detection Pull-up" (at 39.37 156.21 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 50a2e5bf-a37f-4fdb-877b-6b1abdf613b3)
-  )
-  (text "Notes:\n\nHWB has weak pullup to not use bootloader on reset.\nEntering bootloader is done by holding reset and hwb switches down together, releasing reset then releasing hwb.\n\n330ohm resistors as per \"AN2519 - AVR Microcontroller Hardware Design Considerations\""
-    (at 12.7 196.85 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid e21437f8-33f7-468b-b6df-9d6e1bbf6b6b)
   )
 
   (hierarchical_label "RX_LED" (shape input) (at 177.8 88.9 180)

@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "OpenRetroPad")
+    (date "2022-12-29")
+    (rev "2")
+    (comment 3 "github.com/OpenRetroPad")
+    (comment 4 "ATmega32u4")
+  )
+
   (lib_symbols
     (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "C" (id 0) (at 0.254 1.778 0)
@@ -560,11 +568,6 @@
   (text "POWER LED" (at 49.53 97.79 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 011c349f-1bbf-478a-9e83-d6753429c328)
-  )
-  (text "Notes:\n\nLarge'ish capacitance near USB connectors (10u), should cover any bulk input capacitance for 1117\n\nBridged by default jumper on power led allows disabling always on power led."
-    (at 12.7 196.85 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid b182b975-16ce-4c3d-b491-e235607430bb)
   )
 
   (symbol (lib_id "Device:C_Small") (at 163.83 97.79 180) (unit 1)
