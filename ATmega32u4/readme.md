@@ -1,9 +1,9 @@
 # OpenRetroPadHW - ATmega32u4
 
-* [Schematic](AATmega32u4/outputs/OpenRetroPad.pdf)
-* [Layout/Assembly](ATmega32u4/outputs/OpenRetroPad-Assembly.pdf)
-* [PCB Top](ATmega32u4/outputs/OpenRetroPad-top.png)
-* [PCB Bottom](ATmega32u4/outputs/OpenRetroPad-bottom.png)
+* [Schematic](outputs/OpenRetroPad.pdf)
+* [Layout/Assembly](outputs/OpenRetroPad-Assembly.pdf)
+* [PCB Top](outputs/OpenRetroPad-top.png)
+* [PCB Bottom](outputs/OpenRetroPad-bottom.png)
 
 ## Overview
 
