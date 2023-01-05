@@ -23,6 +23,13 @@ The PCB has been designed to be manufactured and assembled with [JLCPCB](https:/
 
 The schematic uses a heirachical design and [vector buses](https://docs.kicad.org/6.0/en/eeschema/eeschema.html#bus-connections) extensively. To view the pins for each vector bus, select the _Tools_ -> _Bus Definitions_ menu in the schematic editor.
 
+Output PNG files were generated using the following linux commands,
+```
+pdftoppm OpenRetroPad.pdf png/OpenRetroPad.pdf -png -r 600
+pdftoppm OpenRetroPad-Assembly.pdf png/OpenRetroPad-Assembly.pdf -png -r 600
+pngquant --ext .png -f --skip-if-larger --speed 1 --strip png/*.png
+```
+
 ### Plugins
 
 * [Board2Pdf](https://gitlab.com/dennevi/Board2Pdf) has been used to generate the assembly PDF from the PCB layers. COlours have been adjusted to roughly match the default KiCad 6 theme colours for copper, silkscreen etc.
